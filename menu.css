@@ -1,0 +1,52 @@
+h1 {
+    font-weight: bold;
+    font-family: Impact;
+    color:#ffffffff  ;
+    font-size:40px;
+    text-align:center;
+    background: #3498DB;
+
+}
+
+ .menu {
+  
+    text-align:left;
+    font-size:20px;
+    margin: 20px 300px 0px 500px;
+    vertical-align: middle;
+    
+}
+
+ul {
+    list-style: none;
+}
+
+input [type="radio"] {
+	
+        margin-left: 30px;
+    }
+
+
+.like {
+float: right;
+margin-top:-350px;
+margin-right:80px;
+
+}
+
+input:focus, textarea {
+    outline: none !important;
+}
+
+
+textarea {
+    margin: 40px 470px;
+}
+.top {
+    text-align: center;
+    margin-top: 70px;
+    font-size:27px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #ffffff;
+    background: #3498DB;
+}
