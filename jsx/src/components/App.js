@@ -2,41 +2,37 @@ import React, { Component } from 'react';
 import './App.css';
 
 
+
 class App extends Component {
- constructor(props) {
-     super(props);
-     this.state={
-         menu: [],
+ state = {
+     
+         menu: []
      };
- }
  
-componentDidMount() {
- this.va =  fetch ('https://shielded-shore-34760.herokuapp.com/')
-        .then(res => {
-         return res.json();
-     }).then(data=> {
-         this.menu = data.res.map((list)=> {
-             return (
-                 <div key= {list.res}>
-                 <img src= {list.menu} alt="Menu" />
-                 </div>
-         )
-         })
-        
-       
-     })
+ 
+async componentDidMount() {
+    try {
+        const res = await  fetch ('https://shielded-shore-34760.herokuapp.com/');
+        const menu = await res.json();
+        this.setState({menu});
+
     }
-    
-    
+    catch (e) {
+        console.log(e);
 
-     render() {
+    }
+}
+    
+  render() {
     return (
-      <div className="App">
-      <div className="container">
-      {this.state.menu}
-      {this.va}
-
-      </div>
+      <div>
+      {this.state.menu.map(item => (
+      <div key = {item.price}>
+      <h1>{item.item}</h1>
+      <h3>{item.price}</h3>
+      <span><img src = {item.image}></img> </span>
+       </div>
+      ))}
       </div>
     );
   }
