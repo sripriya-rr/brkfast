@@ -1,5 +1,47 @@
-.App {
+* {
+  background:#ffebcd;
+}
+
+h1 {
+
+  text-align: left;
+  color: #cd853f;
+  font-weight: bold;
+  margin-top:20px;
+  margin-left:300px;
+ 
+}
+
+img {
+
+  margin-top: 5px;
+  width:200px;
+  height: 150px;
+  margin-left:300px;
+}
+
+p {
+  font-size:53px;
+  font-family: Impact;
+  color:#dc143c;
+  background:#ffdab9;
   text-align: center;
 }
 
+h3 {
+ margin-top: 5px;
+ margin-left:300px;
+}
+
+button {
+  margin-left:550px;
+  margin-bottom:60px;
+}
+
+a {
+  text-decoration: none;
+  font-family: 'Helvetica Neue';
+  color:#ffa500;
+  font-weight:bold;
+}
 
